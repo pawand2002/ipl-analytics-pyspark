@@ -84,12 +84,8 @@ This project is designed to **practice Spark performance tuning**:
 
 ## 🚀 How to Run
 1. Upload `matches.csv` and `deliveries.csv` to `/Volumes/ipl_analytics/bronze/`.  
-2. Run notebooks step‑by‑step:
-   - `01_ingestion_bronze.ipynb`  
-   - `02_schema_silver.ipynb`  
-   - `03_quality_checks.ipynb`  
-   - `04_transformations_gold.ipynb`  
-   - `05_optimizations.ipynb`  
+2. Run notebook step‑by‑step:
+   - `IPL analytics project.ipynb`  
 3. Use `.explain(True)` and job logs to observe shuffle vs non‑shuffle stages.  
 4. Compare runtime before/after optimizations.
 
