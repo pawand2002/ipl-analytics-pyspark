@@ -62,23 +62,86 @@ This project is designed to **practice Spark performance tuning**:
   - Slicer → Season filter  
   - KPI card → Highlight top scorer each year  
 
+---
+
+### 📄 Page 1: Player Statistics
+| Visual Type | Data Source | Description |
+|-------------|-------------|-------------|
+| Bar Chart   | `gold.top_batsmen_per_season` | Runs scored by batsman per season |
+| KPI Card    | `gold.top_batsmen_per_season` | Highlight top scorer each year |
+| Line Chart  | `gold.top_bowlers_per_season` | Wickets trend across seasons |
+| Slicer      | Season field | Filter dashboards by season |
+
+```
+
+```
 ### 2. Top Bowlers per Season
 - **Data Source:** `gold.top_bowlers_per_season`
 - **Visuals:**
   - Column chart → Wickets taken per bowler per season  
   - Line chart → Trend of wickets across seasons  
+```
+```
+### 📄 Page 2: Team Analysis
+| Visual Type | Data Source | Description |
+|-------------|-------------|-------------|
+| Heatmap     | `gold.team_win_ratio_by_venue` | Venue vs Team win counts |
+| Map Visual  | `gold.team_win_ratio_by_venue` | Stadium locations with win % bubble size |
+| Column Chart| `gold.team_performance` | Wins per team per season |
+| Slicer      | Team field | Filter dashboards by team |
+```
 
+```
 ### 3. Team Win Ratio by Venue
 - **Data Source:** `gold.team_win_ratio_by_venue`
 - **Visuals:**
   - Heatmap → Venue vs Team, colored by win count  
   - Map → Stadium locations with win % bubble size  
+```
+```
+### 📄 Page 3: Venue Insights
+| Visual Type | Data Source | Description |
+|-------------|-------------|-------------|
+| Line Chart  | `gold.venue_runs` | Average runs scored per venue |
+| Comparison Card | `gold.venue_runs` | Highest vs lowest scoring venues |
+| Drill-through | `matches_silver` | Match-level details for selected venue |
+| Slicer      | Venue field | Filter dashboards by stadium |
 
+```
+```
 ### 4. Venue Scoring Averages
 - **Data Source:** `gold.venue_runs`
 - **Visuals:**
   - Line chart → Average runs per venue over seasons  
   - Drill‑through → Match‑level details  
+```
+```
+### 📄 Page 4: Optimization Showcase (Optional)
+| Visual Type | Data Source | Description |
+|-------------|-------------|-------------|
+| Table       | Experiment logs | Before vs After runtime comparison |
+| KPI Card    | Experiment logs | Shuffle size reduction |
+| Line Chart  | Experiment logs | Runtime trend across optimizations |
+---
+
+## 📊 Power BI Dashboard Layout
+
+To complement the PySpark pipeline, we designed interactive dashboards in Power BI.  
+Each page focuses on a different analytical perspective of the IPL dataset.
+
+---
+
+
+
+
+
+
+
+## 🎯 Dashboard Outcomes
+- **Player Insights:** Identify consistent top performers.  
+- **Team Strategy:** Venue-wise win ratios for tactical planning.  
+- **Fan Engagement:** Interactive visuals for IPL trends.  
+- **Optimization Proof:** Demonstrate Spark tuning impact on BI query speed.
 
 ---
 
